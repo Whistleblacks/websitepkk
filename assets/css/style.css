@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.c-item {
+    height: 730px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+h2::after {
+        content: "";
+        display: block;
+        width: 30vh;
+        height: 5px;
+        margin: 10px auto 0;
+        border-radius: 8px;
+        background: #FFD95F;
+      }
+/* Navbar */
+        .navbar {
+            transition: background-color 0.3s ease-in-out;
+            padding: 15px 0;
+        }
+
+        /* Navbar sangat transparan saat di-scroll */
+        .navbar.scrolled {
+            background-color: rgba(0, 0, 0, 0.1) !important;
+        }
+
+        /* Navbar item berada di tengah */
+        .navbar-collapse {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .navbar-nav{
+            gap: 20px;
+        }
+
+        /* Setiap section memiliki tinggi untuk efek scroll */
+        
+        #about-product, #contact #product{
+            padding-top:2rem;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            text-align: center;
+        }
+              
+        #btnCheck {
+            background-color:#FFD95F;
+        }
+        
+        
+        #textColor{
+           color:#B8D576;
+        }
+        
+        #product{
+            background-color: #FFEFC8;
+        }
+        
+        #home { 
+        background-color: #FFEFC8; 
+        }
+      
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 1rem;
+        }
+
+        /* Animasi hamburger */
+        .navbar-toggler {
+            border: none;
+            outline: none;
+        }
+
+        .navbar-toggler span {
+            display: block;
+            width: 30px;
+            height: 3px;
+            margin: 6px auto;
+            background-color: black;
+            transition: 0.4s ease-in-out;
+        }
+
+        .navbar-toggler.open span:nth-child(1) {
+            transform: translateY(9px) rotate(45deg);
+        }
+
+        .navbar-toggler.open span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .navbar-toggler.open span:nth-child(3) {
+            transform: translateY(-9px) rotate(-45deg);
+        
+       }
+       
+       .card{
+           border-radius:1.5rem;
+           overflow:hidden;
+           box-shadow: 0px 16px 32px hsla(230, 50%, 20%, .1);
+           width: 350px;
+       }
+
+
+/* Media query untuk layar dengan lebar kurang dari 720px */
+@media (max-width: 720px) {
+    .card {
+        max-width: 250px; /* Lebar card pada layar kecil */
+        margin: auto;
+    }
+
+    .card-body {
+        padding: 8px; /* Mengurangi padding dalam card */
+    }
+
+    .card-title {
+        font-size: 1rem; /* Mengurangi ukuran font judul */
+    }
+
+    .card-text {
+        font-size: 0.9rem; /* Mengurangi ukuran font deskripsi */
+    }
+
+    .list-group-item {
+        font-size: 0.9rem; /* Mengurangi ukuran font harga dan tombol */
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+    .card {
+        max-width: 300px;
+    }
+    .col-md-4 {
+        padding: 0 10px; /* Memberikan padding di kiri dan kanan setiap kolom */
+    }
+}
+
+
+       
+       html {
+    scroll-behavior: smooth;
+}
+
+
+@media (max-width: 768px) {
+    .row-cols-md-2 {
+        display: flex;
+        flex-direction: column;
+    }
+}
